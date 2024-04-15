@@ -253,26 +253,11 @@
     const windowBody = document.querySelector('.window-body');
     closeButton.addEventListener('click', () => {
       // Clear the existing content
-      windowBody.innerHTML = '';
+      windowBody.innerHTML = 'Cancelled';
 
       // Create a string with the desired text
-      const animatedText = 'POLARIS18002738255';
+      const animatedText = 'Castle‎on‎the‎Hill';
 
-      // Split the string into individual characters
-      const chars = animatedText.split('');
-
-      // Animate the text by displaying one character at a time
-      let animationInterval = setInterval(() => {
-        if (chars.length === 0) {
-          clearInterval(animationInterval);
-          return;
-        }
-        const char = chars.shift();
-        const animatedBlock = document.createElement('span');
-        animatedBlock.classList.add('animated-block');
-        animatedBlock.textContent = char;
-        windowBody.appendChild(animatedBlock);
-      }, 50); // Adjust this value to control the animation speed
     });
 
     // Handle the "OK" button click
